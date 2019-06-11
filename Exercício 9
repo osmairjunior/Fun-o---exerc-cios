@@ -1,0 +1,17 @@
+<?php
+function divisivel($m, $n){
+    if ($m % $n == 0) {
+        return 1 ;
+    } else{
+        return 0 ;
+    }
+}
+print "\n Digite o Dividendo: ";
+$m = (int) fgets (STDIN);
+
+print "\n Digite o Divisor: ";
+$n = (int) fgets (STDIN);
+
+$r = divisivel($m, $n);
+
+print "\n $r \n \n";
