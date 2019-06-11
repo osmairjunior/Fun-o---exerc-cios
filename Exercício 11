@@ -1,0 +1,11 @@
+<?php
+function centimetros ($m){
+    $m = $m * 2.54;
+    return $m;
+}
+print "\n Digite a medida em polegadas: ";
+$m = (float) fgets(STDIN);
+
+$m = centimetros ($m);
+
+print "\n Medida em centímetros: $m \n \n";
