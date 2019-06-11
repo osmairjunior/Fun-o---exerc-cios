@@ -1,0 +1,22 @@
+<?php
+
+function perimetro ($lados, $medida) {
+    $p = $medida * $lados;
+    return $p;
+}
+
+print "\n Digite a quantidade de lados (3, 4 ou 5): ";
+    $lados = (int) fgets (STDIN);
+
+print "\n Digite a medida de um dos lados (cm): ";
+    $medida = (int) fgets (STDIN);
+
+$p = perimetro ($lados, $medida); 
+
+        if ($lados == 3) {
+            print "\n Triângulo. O perímetro é: $p \n \n ";
+        } elseif ($lados == 4) {
+            print "\n Quadrado. O perímetro é: $p \n \n ";
+        } elseif ($lados == 5) {
+            print "\n Pentágono. O perímetro é: $p \n \n ";
+        }
