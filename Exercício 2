@@ -1,0 +1,17 @@
+<?php
+
+function hipotenusa ($co, $ca){
+    $h = sqrt (($ca*$ca) + ($co*$co) );
+    return $h;
+}
+print "Informe o cateto oposto:\n";
+    $co = (float) fgets (STDIN);
+
+print "Informe o cateto adjacente:\n";
+    $ca = (float) fgets (STDIN);
+
+$h = hipotenusa ($co , $ca);
+
+print "Hipotenusa: $h \n\n";
+
+
