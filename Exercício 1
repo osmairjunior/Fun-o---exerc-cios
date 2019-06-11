@@ -1,0 +1,15 @@
+<?php
+
+function conversor ($fahrenheit) {
+    $celsius = ($fahrenheit-32) * 5/9;
+    return $celsius;
+}
+
+print "Informe a temperatura em Fahrenheit:\n\n";
+$fahrenheit = (int) fgets(STDIN);
+
+$celsius = conversor ($fahrenheit);
+
+print "A temperatura em grau celsius é: $celsius\n\n";
+
+
