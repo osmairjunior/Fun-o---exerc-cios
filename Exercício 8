@@ -1,0 +1,43 @@
+<?php
+function dia ($n){
+    if ($n < 1 or $n > 7){
+        print "\n O NÚMERO INSERIDO NÃO CORRESPONDE A NENHUM DIA DA SEMANA.\n ";
+    }
+    
+    else  { 
+        switch ($n) {           // Caso
+            case 1:
+            print "\n DOM \n ";
+            break;             //parar código
+            
+            case 2:
+            print "\n SEG \n ";
+            break;
+            
+            case 3:
+            print "\n TER \n ";
+            break;
+            
+            case 4:
+            print "\n QUA \n";
+            break;
+            
+            case 5:
+            print "\n QUI \n ";
+            break;
+            
+            case 6:
+            print "\n SEX \n ";
+            break;
+            
+            case 7:
+            print "\n SÁB \n ";
+            break;
+        }
+    }
+}
+print " \n Insira o número correspondente a um dia da semana: ";
+    $n = (int) fgets (STDIN);
+    
+$n = dia ($n);
+    
